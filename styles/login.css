@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');/*Tai Heritage Pro*/
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*Bebas Neue*/
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');/*Dancing Script*/
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&display=swap');/*Cormorant Garamond*/
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Crimson+Text&family=Dancing+Script&display=swap');/*Crimson Text*/
 *{
     margin: 0%;
     padding: 0%;
@@ -45,7 +45,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    font-family:Georgia, 'Cormorant Garamond', Times, serif;
+    font-family:'Crimson Text';
     font-size: 12pt;
 }
 
@@ -73,15 +73,14 @@ input{
     border-radius: 5px;
     padding: 3px;
     transition: 0.2s;
-    animation: borda 1.5s infinite;
+    font-family: 'Crimson Text';
+    margin-bottom: 5px;
 }
 
 input:focus{
     width: 370px;
     height: 40px;
     transition: 0.05s;
-    /*background-color: rgb(27, 61, 212);
-    color: #d33131;*/
 }
 
 input:hover{
@@ -101,6 +100,7 @@ button{
     border-radius: 20px;
     border: none;
     color:aliceblue;
+    font-family: 'Crimson Text';
 }
 
 button:active{
@@ -114,4 +114,15 @@ button:hover{
     background-color: #723d46;
     font-weight: bold;
     transition: 0.1;
+}
+
+input[type="password"]{
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Crimson Text';
+    color: #194d50;
+    margin-bottom: 20px;
 }
