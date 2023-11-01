@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');/*Tai Heritage Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');/*Dancing Script*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&display=swap');/*Cormorant Garamond*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#pagina{
+    background-color: #3498db;
+    height: 100vh;
+    width: 100%;
+    background-color: #3c6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para a navegação (menu) */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    text-indent: 10px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#pagina{
+    background-color: #3c6e71;
+    height: 100vh;/*VH viewport height
+    width: 100%;
+    background-color: #3c6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    height: 40px;
+    width: 50vh;
+    text-align: center;
+    font-family: 'Dancing Script';
+    background-color: aquamarine;
+    margin-bottom: 50px;
+}
+
+#apresentacao{
+    height: 100px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 300px;
+    font-family: 'Crimson Text';
+    font-size: 12pt;
+    background-color: #aed9e0;
+    border-radius: 10px;
+}
+
+ #opcoes{
+    height: 10px;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 300px;
+    font-family: 'Crimson Text';
+    font-size: 12pt;
+    background-color: #e0aeae;
+    border-radius: 10px;
+ }
+ 
+a{
+    text-decoration: none;
+
+}
+
+p{
+    text-align: justify;
+    text-indent: 10px;
+}
+*/

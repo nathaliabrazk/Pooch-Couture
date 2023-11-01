@@ -8,9 +8,74 @@
     padding: 0%;
 }
 
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para a navegação (menu) */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    text-indent: 10px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 #pagina{
     background-color: #3c6e71;
-    height: 100vh;/*VH viewport height*/
+    height: 100vh;/*VH viewport height
     width: 100%;
     background-color: #3c6e71;
     display: flex;
@@ -28,12 +93,12 @@ h1{
     margin-bottom: 50px;
 }
 
-#caixa{
+#apresentacao{
     height: 100px;
     width: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     padding: 300px;
     font-family: 'Crimson Text';
     font-size: 12pt;
@@ -41,7 +106,26 @@ h1{
     border-radius: 10px;
 }
 
+ #opcoes{
+    height: 10px;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 300px;
+    font-family: 'Crimson Text';
+    font-size: 12pt;
+    background-color: #e0aeae;
+    border-radius: 10px;
+ }
+ 
 a{
     text-decoration: none;
 
 }
+
+p{
+    text-align: justify;
+    text-indent: 10px;
+}
+*/

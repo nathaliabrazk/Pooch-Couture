@@ -26,6 +26,7 @@ main{
     display: flex;
     overflow: hidden;
     margin: 0px auto;
+    border-radius: 10px;
 }
 
 #banner, #formulario{
@@ -125,4 +126,29 @@ a{
     font-family: 'Crimson Text';
     color: #194d50;
     margin-bottom: 20px;
+}
+
+a:hover{
+    color: #3d8bbb;
+    transition: 0.2s;
+}
+
+/*responsividade*/
+@media (max-width: 670px) {
+    main {
+        flex-direction: column;
+    }
+
+    #banner, #formulario {
+        width: 100%;
+        height: 100%;
+    }
+
+    #formulario {
+        max-width: 100%;
+    }
+
+    input, button {
+        width: 100%;
+    }
 }
