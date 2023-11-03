@@ -15,49 +15,85 @@ body, h1, p, ul, li {
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #3498db;
-    color: #fff;
+    background-color:beige;
+    color: rgba(0, 0, 0, 0.719);
     text-align: center;
-    padding: 20px;
+    height: 40px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilos para a navegação (menu) */
-nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+h1{
+    font-family: 'Dancing Script';
 }
 
+h2{
+    font-family: 'Bebas Neue';
+    color: rgb(134, 87, 87);
+}
+/* Add this CSS to style the horizontal list */
 nav ul {
     list-style: none;
     padding: 10px;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #000000;
+    /*padding: 10px 15px;*/
 }
 
+/*a{
+    color: #1cc206;
+    text-decoration: none;
+    /*margin: 0px 10px;
+    padding: 0px 5px;
+}*/
 /* Estilos para o conteúdo principal */
 main {
+    background-color: #46aad1;
+    height: 800px;
+    width: 100%;
     padding: 20px;
+    text-align: center;
+}
+
+#texto{
+    background-color: beige;
+    height: 500px;
+    width: 70%;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Tai Heritage Pro';
+
 }
 
 /* Estilos para o rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color:beige;
+    color: rgba(0, 0, 0, 0.719);
     text-align: center;
     padding: 10px;
 }
 
 p{
-    text-indent: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-indent: 20px;
     text-align: justify;
 }
 
