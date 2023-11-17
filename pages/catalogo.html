@@ -10,41 +10,35 @@
 </head>
 <body data-bs-theme="light">
     <div id="root" class="container-fluid p-0 m-0">
-        <header>
-            <nav class="navbar navbar-expand-md" style="color: var(--branco);">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+      <header>
+        <nav class="navbar navbar-expand-md" style="color: var(--branco);">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <h2 class="mx-auto" style="font-family:'Dancing Script';">Pooch Couture</h2>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="navbar-brand" href="#"><img id="imgLogo" src="images/logo/logoDark.svg" alt=""></a>
-                      </li>
-                      <li class="nav-item" >
-                        <a class="nav-link active" style="color: var(--branco);" aria-current="page" href="index.html">Home</a>
-                      </li>
-
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"  style="color: var(--branco);" href="pages/sobre.html">Sobre nós</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"  style="color: var(--branco);" href="#">Produtos</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#"><img id="imgLogo" src="images/logo/logoDark.svg" alt=""></a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link active" style="color: var(--branco);" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  style="color: var(--branco);" href="pages/sobre.html">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  style="color: var(--branco);" href="#">Produtos</a>
+                        </li>
                     </ul>
-                    <ul class="navbar-nav">
-                      <li>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" role="switch" id="botaoTema">
-                          <label class="form-check-label" for="botaoTema">Tema : <span id="temaAtual">Claro</span></label>
-                        </div>
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" style="color: var(--branco);" href="../pages/login.html">Login</a>
                       </li>
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
-              </nav>
-              <h3 class="text-center mx-auto p- mb-5" style="font-family: 'Dancing Script';">Pooch Couture</h3>
+            </div>
         </header>
 
         <main>
@@ -61,7 +55,7 @@
                           <h2 class="card-title" style="color: var(--marrom-escuro);">ROUPINHA</h2>
                           <p class="card-text" style="font-family: 'Crimson Text';">Fofura e conforto</p>
                           <h4 style="color: var(--verde);">R$100</h4>
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comidaModal" style="background-color: var(--marrom-escuro); border-radius: 10px; border: none;">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto1Modal" style="background-color: var(--marrom-escuro); border-radius: 10px; border: none;">
                               VER MAIS
                           </button>
                       </div>
@@ -161,11 +155,11 @@
                  
     <!--MODAIS-->
     <!-- Coleira Modal -->
-    <div class="modal fade" id="coleiraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">COLEIRA</h1>
+          <h1 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">ROUPINHA</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
