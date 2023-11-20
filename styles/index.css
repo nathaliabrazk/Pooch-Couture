@@ -23,6 +23,11 @@ header, footer{
     color: var(--branco);
 }
 
+a:hover{
+    background-color: #3c8594bc;
+    transition: 0.3s;
+}
+
 h3{
     font-family: 'Cormorant Garamond';
 }
