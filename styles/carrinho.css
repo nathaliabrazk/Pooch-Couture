@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');/*Tai Heritage Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');/*Dancing Script*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&display=swap');/*Cormorant Garamond*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Crimson+Text&family=Dancing+Script&display=swap');/*Crimson Text*/
+
+:root{
+    --verde: #3e951a;
+    --rosa: #F7B6D2;
+    --salmao: #ff6b6b;
+    --laranja: #F4A623;
+    --preto: #424242;
+    --branco: #FFFFFF;
+
+    --azul-escuro: #3c6e71;
+    --azul-claro: #aed9e0;
+    --marrom-escuro: #472d30;
+    --marrom-claro: #a169623a;
+
+}
+
+header, footer{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+a:hover{
+    background-color: #3c8594bc;
+    transition: 0.3s;
+}
+
+h3{
+    font-family: 'Cormorant Garamond';
+}
+
+h2{
+    font-family: 'Bebas Neue';
+}
+
+#root{
+    background-color: var(--azul-claro);
+}

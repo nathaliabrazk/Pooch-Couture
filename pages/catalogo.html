@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
-    <link rel="shortcut icon" href="images/logo/logoDark.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../pages/carrinho.html">
 </head>
 <body>
     <div id="root" class="container-fluid p-0 m-0">
@@ -158,7 +158,7 @@
                       <h2 class="card-title" style="color: var(--marrom-escuro);">FANTASIA ABELHA</h2>
                       <p class="card-text" style="font-family: 'Crimson Text';">Uma fantasia super fofa para o seu pet</p>
                       <h4 style="color: var(--verde);">R$100</h4>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto5Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto9Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
                           VER MAIS
                       </button>
                   </div>
@@ -167,10 +167,10 @@
                  <div class="card" style="width: 23rem;">
                   <img src="../images/produto-10.png" class="card-img-top" alt="Imagem do Produto 3" style="height: 450px;">
                   <div class="card-body">
-                      <h2 class="card-title" style="color: var(--marrom-escuro);">BANDANA</h2>
+                      <h2 class="card-title" style="color: var(--marrom-escuro);">CONJUNTO FOFO</h2>
                       <p class="card-text" style="font-family: 'Crimson Text';">Um toque estiloso para o seu pet</p>
                       <h4 style="color: var(--verde);">R$100</h4>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto6Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto10Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
                           VER MAIS
                       </button>
                   </div>
@@ -179,10 +179,10 @@
                  <div class="card" style="width: 23rem;">
                   <img src="../images/produto-11.png" class="card-img-top" alt="Imagem do Produto 3" style="height: 450px;">
                   <div class="card-body">
-                      <h2 class="card-title" style="color: var(--marrom-escuro);">ROUPA DELICADA</h2>
+                      <h2 class="card-title" style="color: var(--marrom-escuro);">FANTASIA DINOSSAURO</h2>
                       <p class="card-text" style="font-family: 'Crimson Text';">Conforto e delicadeza unidos perfeitamente</p>
                       <h4 style="color: var(--verde);">R$100</h4>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto7Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto11Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
                           VER MAIS
                       </button>
                   </div>
@@ -194,7 +194,7 @@
                       <h2 class="card-title" style="color: var(--marrom-escuro);">GRAVATA</h2>
                       <p class="card-text" style="font-family: 'Crimson Text';">Nessa peça o conforto é a prioridade</p>
                       <h4 style="color: var(--verde);">R$100</h4>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto8Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto12Modal" style="background-color: var(--marrom-escuro); border-radius: 15px; border: none;">
                           VER MAIS
                       </button>
                   </div>
@@ -205,7 +205,7 @@
                  
     <!--MODAIS-->
     <!-- ROUPINHA Modal -->
-    <div class="modal fade" id="produto1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-produto-id="produto1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -216,18 +216,18 @@
           <img class="w-100" src="../images/produto-1.png" style="height: 70vh;"alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto1">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
-          <button type="button" class="btn btn-success" style="background-color: var(--azul-escuro);border-radius: 15px">Adicionar no carrinho</button>
+          <button type="button" class="btn btn-success" style="background-color: var(--azul-escuro); border-radius: 15px;" data-produto-id="produto1">Adicionar no carrinho</button>
         </div>
       </div>
     </div>
     </div>
 
     <!-- PIJAMA Modal -->
-    <div class="modal fade" id="produto2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-produto-id="produto2">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -238,7 +238,7 @@
           <img class="w-100"  src="../images/produto-2.png" style="height: 70vh;" alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto2">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -249,7 +249,7 @@
     </div>
 
     <!-- FANTASIA Modal -->
-    <div class="modal fade" id="produto3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-produto-id="produto3">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -260,7 +260,7 @@
           <img class="w-100"  src="../images/produto-3.png" style="height: 70vh;" alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto3">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -271,7 +271,7 @@
     </div>
 
     <!-- MOLETOM Modal -->
-    <div class="modal fade" id="produto4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto4">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -282,7 +282,7 @@
           <img class="w-100"  src="../images/produto-4.png" style="height: 70vh;"alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto4">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -293,7 +293,7 @@
     </div>
 
     <!-- MOLETOM E CORRENTE Modal -->
-    <div class="modal fade" id="produto5Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto5Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto5">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -301,10 +301,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img class="w-100"  src="../images/produto-5.png" style="height: 70vh;" alt="">
+          <img class="w-100"  src="../images/produto-5.png" style="height: 70vh;"alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto5">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -315,7 +315,7 @@
     </div>
 
     <!-- BANDANA Modal -->
-    <div class="modal fade" id="produto6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto6">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -323,10 +323,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img class="w-100"  src="../images/produto-6.png" style="height: 70vh;" alt="">
+          <img class="w-100"  src="../images/produto-6.png" style="height: 70vh;"alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto6">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -337,7 +337,7 @@
     </div>
 
     <!-- ROUPA DELICADA Modal -->
-    <div class="modal fade" id="produto7Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="produto7Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto7">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -345,10 +345,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img class="w-100"  src="../images/produto-7.png" style="height: 70vh; "alt="">
+          <img class="w-100"  src="../images/produto-7.png" style="height: 70vh;"alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto7">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -358,19 +358,107 @@
     </div>
     </div>
 
-    <!-- CAMISA CONFORTÁVEL Modal -->
-    <div class="modal fade" id="produto8Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- CAMISA CONFORTAVEL Modal -->
+    <div class="modal fade" id="produto8Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto8">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" style="color: var(--marrom-escuro);" id="exampleModalLabel">CAMISA CONFORTÁVEL</h1>
+          <h1 class="modal-title fs-5" style="color: var(--marrom-escuro);" id="exampleModalLabel">CAMISA CONFORTAVEL</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img class="w-100" src="../images/produto-8.png" style="height: 70vh;" alt="">
+          <img class="w-100"  src="../images/produto-8.png" style="height: 70vh;"alt="">
           <h3 style="color: var(--verde);">R$100</h3>
           <label for="quantidade">Quantidade do produto:</label>
-          <input type="number" name="" id="quantidade">
+          <input type="number" name="" id="quantidade_produto8">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
+          <button type="button" class="btn btn-success" style="background-color: var(--azul-escuro); border-radius: 15px;">Adicionar no carrinho</button>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+    <!-- FANTASIA ABELHA Modal -->
+    <div class="modal fade" id="produto9Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto9">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" style="color: var(--marrom-escuro);" id="exampleModalLabel">FANTASIA ABELHA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="w-100"  src="../images/produto-9.png" style="height: 70vh;" alt="">
+          <h3 style="color: var(--verde);">R$100</h3>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" name="" id="quantidade_produto9">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
+          <button type="button" class="btn btn-success" style="background-color: var(--azul-escuro); border-radius: 15px;">Adicionar no carrinho</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- CONJUNTO FOFO Modal -->
+    <div class="modal fade" id="produto10Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto10">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" style="color: var(--marrom-escuro);" id="exampleModalLabel">CONJUNTO FOFO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="w-100"  src="../images/produto-10.png" style="height: 70vh;" alt="">
+          <h3 style="color: var(--verde);">R$100</h3>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" name="" id="quantidade_produto10">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
+          <button type="button" class="btn btn-success" style="background-color: var(--azul-escuro); border-radius: 15px;">Adicionar no carrinho</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- FANTASIA DINOSSAURO Modal -->
+    <div class="modal fade" id="produto11Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto11">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" style="color: var(--marrom-escuro);" id="exampleModalLabel">FANTASIA DINOSSAURO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="w-100"  src="../images/produto-11.png" style="height: 70vh; "alt="">
+          <h3 style="color: var(--verde);">R$100</h3>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" name="" id="quantidade_produto11">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
+          <button type="button" class="btn btn-success" style="background-color: var(--azul-escuro); border-radius: 15px;">Adicionar no carrinho</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- GRAVATA Modal -->
+    <div class="modal fade" id="produto12Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-produto-id="produto12">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" style="color: var(--marrom-escuro);" id="exampleModalLabel">GRAVATA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="w-100" src="../images/produto-12.png" style="height: 70vh;" alt="">
+          <h3 style="color: var(--verde);">R$100</h3>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" name="" id="quantidade_produto12">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="border-radius: 15px;">Cancelar</button>
@@ -384,6 +472,40 @@
       <h4>Todos os direitos reservados a @Pooch Couture - 2023</h4>
   </footer>
 
+<script>
+  // Função para adicionar produto ao carrinho
+  function adicionarNoCarrinho(produtoId) {
+    // Aqui você pode implementar a lógica para adicionar o produto ao carrinho
+    // Obtenha a quantidade do produto usando o ID do modal correspondente
+    const quantidade = document.getElementById(`quantidade_${produtoId}`).value;
+    console.log(`Adicionar ${quantidade} do produto ${produtoId} ao carrinho`);
+    // Adicione a lógica de adição ao carrinho conforme necessário
+  }
+
+  // Função para limpar os campos do modal ao fechar
+  function limparCamposModal(produtoId) {
+    // Aqui você pode implementar a lógica para limpar os campos do modal
+    document.getElementById(`quantidade_${produtoId}`).value = '';
+  }
+
+  // Adicione um ouvinte de eventos para cada botão "Adicionar ao carrinho"
+  document.querySelectorAll('[data-produto-id]').forEach(button => {
+    button.addEventListener('click', function () {
+      const produtoId = this.getAttribute('data-produto-id');
+      adicionarNoCarrinho(produtoId);
+    });
+  });
+
+  // Adicione um ouvinte de eventos para cada modal ao ser fechado
+  document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('hidden.bs.modal', function () {
+      const produtoId = this.getAttribute('data-produto-id');
+      limparCamposModal(produtoId);
+    });
+  });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-eZsaz0RvVet1OVeA8P5h7u2fZ0X8zRoG8bAXdNECgIbbVgG8U5nYBLAHVA3FsjW5" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
