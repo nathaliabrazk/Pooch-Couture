@@ -6,6 +6,12 @@
     <title>Carrinho</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300&family=Creepster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="root" class="container-fluid p-0 m-0">
@@ -44,31 +50,38 @@
                     <img src="../images/produto-1.png" class="img-fluid rounded-start" alt="..." style="height: 300px; align-items: center; padding: 10px;" >
                   </div>
                   <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div class="card-body" style="font-family: 'Crimson Text'">
+                      <h5 class="card-title" style="padding: 5px; font-family:'Bebas Neue';">Roupinha</h5>
+                      <p class="card-text">Fofura e conforto</p>
+                      <form>
+                        <p>Calcule o valor do frete</p>
+                        <label for="CEP">CEP:
+                        <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}" placeholder="00000-000"/>
+                        </label>
+                        <input type="submit" class="btn btn-primary" style="background-color: #472d30; border-radius: 20px; border: 1px solid #3c6e71;"value="Calcular" />
+                        <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" style="color: #3c6e71;">Não sei meu CEP</a><br><br>
+                        <label for="quantidade">Quantidade do produto:</label>
+                        <input type="number" name="" id="quantidade_produto1">
+                        </form>
+                        <button class="btn btn-primary" style="background-color: #472d30; border-radius: 20px; border: 1px solid #3c6e71; margin: 10px;">Pagar</button>
+                        <button class="btn btn-primary" style="background-color: #472d30; border-radius: 20px; border: 1px solid #3c6e71;" onclick="redirecionarParaOutraPagina()">Continuar navegando</button>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="right-side-column" style="background-color: red;">
-                <form>
-                    <label for="CEP">CEP:
-                    <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}" placeholder="00000-000"/>
-                    </label>
-                    <input type="submit" value="Calcular" />
-                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
-                    </form>
-                    <button>Pagar</button>
-                    <button>Continuar navegando</button>
               </div>
         </main>
 
     <footer class="text-center py-3" style="font-family: 'Crimson Text';">
       <h4>Todos os direitos reservados a @Pooch Couture - 2023</h4>
   </footer>
+
+<!--Função para redirecionamento de página-->
+    <script>
+      function redirecionarParaOutraPagina() {
+          // Substitua 'caminho-da-outra-pagina.html' pelo caminho real da sua outra página
+          window.location.href = '../pages/catalogo.html';
+      }
+  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
